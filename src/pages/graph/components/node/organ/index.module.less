@@ -1,0 +1,22 @@
+.organ-layer {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+    & > span {
+        font-size: 16px;
+        padding: 10px 0;
+        display: inline-block;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        span {
+            word-break: break-all;
+            &:first-child {
+                flex: 0 0 60px;
+            }
+        }
+    }
+}

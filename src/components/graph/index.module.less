@@ -1,0 +1,133 @@
+@import '../../styles/theme.less';
+.graph-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 5px;
+    position: relative;
+    section {
+        margin: 0 auto;
+    }
+    tspan,
+    text {
+        user-select: none;
+    }
+    .fulltext {
+        display: none;
+        span {
+            background: #ccc;
+        }
+    }
+    .text-wrapper {
+        cursor: pointer;
+        &:hover {
+            .fulltext span {
+                display: block;
+            }
+        }
+    }
+    .legend-wrapper {
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+        color: #fff;
+        font-size: 12px;
+        li {
+            text-align: left;
+            line-height: 24px;
+            position: relative;
+            padding-left: 20px;
+            display: flex;
+
+            span.active {
+                color: @theme;
+            }
+            i {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .PAPER-ICON {
+            position: relative;
+            i {
+                width: 15px;
+                height: 15px;
+                border: 2px solid #a89dff;
+                border-radius: 50%;
+                position: absolute;
+            }
+            b {
+                width: 5px;
+                height: 5px;
+                background-color: #a89dff;
+                border-radius: 50%;
+                position: absolute;
+                left: 30%;
+                top: 30%;
+            }
+            span {
+                position: relative;
+                top: 2px;
+            }
+        }
+        .PATENT-ICON {
+            i {
+                width: 15px;
+                height: 15px;
+                border: 3px solid #a89dff;
+                border-radius: 50%;
+                position: absolute;
+            }
+            span {
+                position: relative;
+                top: 2px;
+            }
+        }
+        .PROJECT-ICON {
+            i {
+                width: 15px;
+                height: 15px;
+                border: 3px solid #a89dff;
+                background-color: #a89dff;
+                border-radius: 50%;
+                position: absolute;
+            }
+            span {
+                position: relative;
+                top: 2px;
+            }
+        }
+        .SUBJECT-ICON {
+            display: none;
+        }
+    }
+    .edgeslabel-group {
+        transform: rotate(90deg);
+    }
+}
+// 1920*1200
+@media screen and (width: 1920px) and (min-height: 1200px) {
+    .graph-wrapper {
+        // height: calc(1080px - 100px);
+    }
+}
+@media screen and (max-width: 1280px) {
+    .graph-wrapper {
+        .legend-wrapper {
+            font-size: 12px;
+            li {
+                line-height: 20px;
+                i {
+                    left: 2px;
+                    top: 4px;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

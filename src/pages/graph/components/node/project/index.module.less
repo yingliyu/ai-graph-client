@@ -1,0 +1,36 @@
+.project-layer {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+    & > span {
+        font-size: 16px;
+        padding: 10px 0;
+        display: inline-block;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 5px;
+        span {
+            white-space: normal;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+            &:first-child {
+                flex: 0 0 70px;
+            }
+        }
+        // .subject-tags {
+        // text-align: center;
+        // }
+        :global .ant-tag.ant-tag-geekblue {
+            margin-bottom: 5px;
+            color: #fff;
+            background-color: #9b8eff;
+            border: none;
+        }
+    }
+}

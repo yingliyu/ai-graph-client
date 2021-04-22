@@ -1,0 +1,37 @@
+@import './../../../../../styles/theme.less';
+
+.expert-layer {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px 5px 5px 0;
+    .expert-name {
+        text-decoration: underline;
+        color: @transColor;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 0;
+        display: inline-block;
+        &:hover {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        span {
+            word-break: break-all;
+            &:first-child {
+                flex: 0 0 60px;
+            }
+        }
+        .resume-content {
+            p,
+            div {
+                display: inline-block;
+            }
+        }
+    }
+}

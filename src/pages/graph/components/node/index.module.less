@@ -1,0 +1,28 @@
+@import './../../../../styles/theme.less';
+.node-layer {
+    width: 100%;
+    padding: 0px 0px 5px;
+    color: #333;
+    .layer-header {
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f3f6f9;
+        padding: 3px 10px;
+
+        small {
+            color: #bdbdbd;
+        }
+    }
+    .layer-content {
+        max-height: calc(100vh - 42px);
+        overflow-y: scroll;
+        padding: 0 10px;
+    }
+}
+:global .ant-drawer-wrapper-body {
+    overflow: hidden;
+}

@@ -1,0 +1,107 @@
+.filter-content-wrapper {
+    width: 200px;
+    position: absolute;
+    right: 80px;
+    top: 45px;
+    background: #28283c;
+    z-index: 3;
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    h4 {
+        color: #fff;
+        line-height: 36px;
+        border-bottom: 1px solid #393962;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .close-filter-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 4;
+        cursor: pointer;
+    }
+    .filter-body {
+        box-sizing: border-box;
+
+        h5 {
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        :global .ant-table-small {
+            border: none;
+        }
+        :global tr,
+        :global th {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+            span {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        :global td {
+            padding-top: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            border-color: rgba(0, 0, 0, 0) !important;
+            span {
+                color: #9b8eff;
+            }
+        }
+        :global label {
+            margin-right: 0;
+            white-space: nowrap;
+            span {
+                // padding-left: 5px;
+            }
+        }
+        :global td {
+            color: #fff;
+            font-size: 12px;
+        }
+        :global .ant-checkbox-wrapper {
+            font-size: 12px;
+        }
+        :global tr td:last-child {
+            & > div {
+                border: 1px solid #9b8eff !important;
+                padding: 5px 0px 5px 5px;
+                border-radius: 5px;
+                
+                & > label:after {
+                    position: absolute;
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border: 10px solid;
+                    border-color: transparent transparent #9b8eff;
+                }
+            }
+            margin-bottom: 15px !important;
+        }
+        :global .ant-table-tbody > tr.ant-table-row-selected td {
+            background: #28283c;
+        }
+        :global
+            .ant-table-tbody
+            > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+            > td {
+            background: #28283c;
+        }
+        :global .ant-btn-primary {
+            span {
+                color: #fff;
+            }
+            background-color: #9b8eff;
+        }
+        :global .ant-table-body {
+            margin-left: 0;
+        }
+    }
+}

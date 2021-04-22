@@ -1,0 +1,26 @@
+.subject-layer {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+    & > span.subject-name {
+        font-size: 16px;
+        padding: 10px 0;
+        display: inline-block;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        span {
+            word-break: break-all;
+            white-space: normal;
+            &:first-child {
+                flex: 0 0 60px;
+            }
+        }
+    }
+}

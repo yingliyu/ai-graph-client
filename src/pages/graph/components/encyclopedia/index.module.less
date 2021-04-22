@@ -1,0 +1,46 @@
+@import '../../../../styles/theme.less';
+.encyclopedia-info {
+    height: 177px;
+    overflow: hidden;
+    padding: 8px 10px 0;
+    line-height: 24px;
+    color: @wordColor;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: -ms-ellipsis-lastline;
+    display: -webkit-box;
+    display: -ms-box;
+    -webkit-line-clamp: 7;
+    -ms-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-sizing: border-box;
+    font-size: 14px;
+    word-break: break-all;
+}
+.more-detail {
+    position: absolute;
+    top: 5%;
+    right: 15px;
+    font-size: 12px;
+    &:hover {
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .encyclopedia-info {
+        height: 155px;
+        line-height: 24px;
+        -webkit-line-clamp: 6;
+        -ms-line-clamp: 6;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .encyclopedia-info {
+        height: 125px;
+        line-height: 23px;
+        font-size: 12px;
+        -webkit-line-clamp: 5;
+        -ms-line-clamp: 5;
+    }
+}

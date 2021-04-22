@@ -1,0 +1,24 @@
+@import '../../styles/theme.less';
+
+.radio-group {
+    :global .ant-radio-button-wrapper {
+        background: rgba(0, 0, 0, 0.3);
+        border: none;
+        color: gray;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    :global .ant-radio-button-wrapper-checked {
+        background: rgba(170, 159, 255, 0.3);
+        color: #fff;
+        box-shadow: none;
+    }
+
+    :global .ant-radio-button-wrapper:not(:first-child)::before {
+        width: 0px;
+    }
+}

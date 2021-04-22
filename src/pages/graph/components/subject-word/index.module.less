@@ -1,0 +1,42 @@
+@import '../../../../styles/theme.less';
+.subject-info {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 22px;
+    color: @wordColor;
+    overflow: hidden;
+    padding: 5px;
+    p:first-child {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+    p:last-child {
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .subject-info {
+        height: 60px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .subject-info {
+        height: 65px;
+        p:first-child {
+            font-size: 14px;
+        }
+    }
+}

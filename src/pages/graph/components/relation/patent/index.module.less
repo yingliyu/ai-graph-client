@@ -1,0 +1,53 @@
+.patent-layer {
+    text-align: left;
+    padding: 0 15px;
+    .patent-head {
+        display: flex;
+        justify-content: space-between;
+        .patent-titile {
+            width: 230px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        small {
+            font-size: 12px;
+            color: #7f7f7f;
+        }
+    }
+
+    :global .ant-list-vertical .ant-list-item-meta {
+        margin-bottom: 10px;
+    }
+    :global .ant-list-vertical .ant-list-item-meta-title {
+        line-height: 16px;
+        margin-bottom: 5px;
+    }
+    :global .ant-list-item-meta-description {
+        // width: 350px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .patent-abstract {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .patent-layer {
+        .patent-head {
+            .patent-titile {
+                width: 200px;
+            }
+        }
+    }
+}

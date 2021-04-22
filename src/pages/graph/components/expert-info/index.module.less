@@ -1,0 +1,172 @@
+@import '../../../../styles/theme.less';
+.expert-info {
+    width: 370px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 15px;
+    .expert-head {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .expert-head-wrapper {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 1px solid #e8e8e8;
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+            }
+        }
+        .name-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        h5 {
+            font-size: 16px;
+            padding-top: 10px;
+            color: @wordColor;
+            text-align: left;
+        }
+        span {
+            display: block;
+            padding-top: 10px;
+            font-size: 12px;
+            line-height: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: @wordColor;
+            text-align: left;
+        }
+    }
+    ul {
+        padding-top: 5px;
+        color: #fff;
+        li {
+            width: 165px;
+            height: 45px;
+            padding: 0px 10px;
+            background: rgba(170, 159, 255, 0) url('./imgs/btn-bg.png');
+            background-size: 100% 100%;
+            margin-bottom: 5px;
+            float: left;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            &:nth-child(2n + 1) {
+                margin-right: 10px;
+            }
+            span {
+                // line-height: 16px;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+            b {
+                font-size: 16px;
+            }
+        }
+    }
+    .limit-one-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .expert-info {
+        width: 300px;
+        height: 190px;
+        padding: 15px 10px;
+        .expert-head {
+            padding-top: 2px;
+            .expert-head-wrapper {
+                width: 70px;
+                height: 70px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            h5 {
+                font-size: 14px;
+            }
+            span {
+                padding-top: 10px;
+                font-size: 10px;
+            }
+        }
+        ul {
+            padding-top: 12px;
+            li {
+                width: 135px;
+                height: 35px;
+                box-sizing: border-box;
+                margin-bottom: 5px;
+                span {
+                    width: 45px;
+                    word-break: keep-all;
+                    white-space: pre-wrap;
+                    line-height: 14px;
+                }
+                b {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+    .expert-info {
+        width: 270px;
+        height: 150px;
+        padding: 5px 10px;
+        margin-top: 10px;
+        .expert-head {
+            padding-top: 0px;
+            .expert-head-wrapper {
+                width: 60px;
+                height: 60px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            h5 {
+                font-size: 14px;
+            }
+            span {
+                padding-top: 5px;
+                font-size: 10px;
+            }
+        }
+        ul {
+            padding-top: 5px;
+            li {
+                width: 120px;
+                height: 32px;
+                box-sizing: border-box;
+                margin-bottom: 5px;
+                padding: 0 5px;
+                span {
+                    width: 45px;
+                    word-break: keep-all;
+                    white-space: pre-wrap;
+                    line-height: 14px;
+                }
+                b {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

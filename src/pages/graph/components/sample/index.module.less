@@ -1,0 +1,113 @@
+@import '../../../../styles/theme.less';
+.sample-wrapper {
+    display: inline-block;
+    height: 16px;
+    color: @wordColor;
+    text-decoration: underline;
+    padding-left: 10px;
+    position: relative;
+    .expert-words {
+        :global .ant-btn {
+            background-color: #41466a;
+            border: none;
+            color: @wordColor;
+            &:hover {
+                background-color: @theme;
+            }
+        }
+    }
+
+    & > span {
+        cursor: pointer;
+    }
+
+    .examples-wrapper {
+        width: 500px;
+        position: absolute;
+        right: -10px;
+        top: 45px;
+        padding: 10px;
+        text-align: left;
+        box-sizing: border-box;
+        display: none;
+        z-index: 4;
+        background: #28283c;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.06);
+        border-radius: 6px;
+        &:before {
+            content: '';
+            width: 0px;
+            height: 0px;
+            border: 8px solid transparent;
+            border-bottom: 8px solid #28283c;
+            position: absolute;
+            right: 20px;
+            top: -15px;
+        }
+        &:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            position: absolute;
+            right: 23px;
+            top: -6px;
+            transform: rotate(45deg);
+        }
+        section {
+            :global .ant-btn {
+                margin-bottom: 10px;
+            }
+            .active {
+                background: #9688ff;
+            }
+            &:last-child {
+                padding-bottom: 15px;
+            }
+        }
+        :global .ant-btn {
+            margin-right: 10px;
+        }
+        .example-footer {
+            width: 100%;
+            bottom: 2px;
+            right: 0;
+            text-align: right;
+            padding-top: 7px;
+            border-top: 1px solid rgba(236, 236, 236, 0.1);
+        }
+    }
+    .show-example {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sample-wrapper {
+        font-size: 14px;
+
+        .examples-wrapper {
+            // right: 160px;
+            top: 52px;
+            :global .ant-btn {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sample-wrapper {
+        font-size: 14px;
+
+        .examples-wrapper {
+            // right: 135px;
+            top: 48px;
+            :global .ant-btn {
+                font-size: 12px;
+            }
+        }
+    }
+}

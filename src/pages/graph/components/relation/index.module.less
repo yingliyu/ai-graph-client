@@ -1,0 +1,65 @@
+@import './../../../../styles/theme.less';
+
+.relation-layer {
+    width: 100%;
+
+    .layer-tags {
+        height: 42px;
+        line-height: 42px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        i {
+            color: #333;
+        }
+        small {
+            cursor: pointer;
+            color: #bdbdbd;
+            &:hover {
+                color: @theme;
+            }
+        }
+    }
+    .layer-content {
+        max-height: calc(100vh - 42px);
+        overflow-y: scroll;
+    }
+    .layer-header {
+        line-height: 16px;
+        padding: 4px 15px;
+        font-size: 16px;
+        word-break: break-all;
+        text-align: left;
+        small {
+            font-size: 10px;
+            padding-left: 5px;
+        }
+    }
+    .expert-clickable {
+        text-decoration: underline;
+        color: @transColor;
+        cursor: pointer;
+    }
+    :global .ant-tabs-bar {
+        margin-bottom: 0px;
+        .ant-tabs-tab-prev-icon-target,
+        .ant-tabs-tab-next-icon-target {
+            font-size: 18px;
+        }
+    }
+    :global .ant-tabs-nav-container {
+        font-size: 12px;
+    }
+    :global .ant-tabs-tab {
+        font-size: 12px;
+        color: #fff;
+        &:hover {
+            color: #7b6aff;
+        }
+    }
+}
+:global .ant-drawer-close {
+    top: -6px;
+    width: 42px;
+    height: 42px;
+}

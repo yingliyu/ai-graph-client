@@ -1,0 +1,44 @@
+@import '../../../../styles/theme.less';
+.title {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 25px;
+    position: relative;
+    color: @wordColor;
+    font-size: 14px;
+    font-weight: 400;
+    &:before {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 18px;
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        background: #8b60fb;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .title {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .title {
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        padding-left: 20px;
+        &:before {
+            width: 6px;
+            height: 12px;
+            top: 7px;
+            left: 10px;
+        }
+    }
+}

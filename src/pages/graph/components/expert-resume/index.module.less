@@ -1,0 +1,103 @@
+@import '../../../../styles/theme.less';
+
+.expert-resume {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+    .more-detail {
+        position: absolute;
+        top: 5%;
+        right: 15px;
+        font-size: 12px;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+    ul {
+        width: 101%;
+        padding: 5px 15px;
+        color: @wordColor;
+        font-size: 12px;
+        li {
+            display: flex;
+            justify-content: space-between;
+            line-height: 20px;
+            span {
+                word-break: break-all;
+                &:first-child {
+                    flex: 0 0 60px;
+                    text-align: left;
+                }
+                &:last-child {
+                    flex: 0 0 285px;
+                    text-align: left;
+                }
+            }
+            ol {
+                flex: 0 0 285px;
+                text-align: left;
+            }
+            a {
+                white-space: nowrap;
+            }
+            .resume-content {
+                p,
+                div {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .text-overflow {
+            width: 270px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .expert-resume {
+        ul {
+            height: 105px;
+            font-size: 10px;
+            & > li {
+                line-height: 20px;
+                span {
+                    &:last-child {
+                        flex: 0 0 215px;
+                    }
+                }
+                ol {
+                    flex: 0 0 215px;
+                }
+            }
+            .text-overflow {
+                width: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+    .expert-resume {
+        ul {
+            height: 105px;
+            font-size: 10px;
+            & > li {
+                line-height: 16px;
+                span {
+                    &:last-child {
+                        flex: 0 0 185px;
+                    }
+                }
+                ol {
+                    flex: 0 0 185px;
+                }
+            }
+            .text-overflow {
+                width: 170px;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import './reset.less';
+@import './theme.less';
+
+body {
+    // width: 1920px;
+    // height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f3f6f9;
+    overflow: hidden;
+}
+&::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+
+&::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(117, 146, 173, 0.5);
+}
+// &::-webkit-scrollbar {
+//     width: 8px;
+//     height: 1px;
+// }
+
+// &::-webkit-scrollbar-thumb {
+//     border-radius: 10px;
+//     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+//     background: rgba(117, 146, 173, 0.5);
+// }
+
+&::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    // -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    // background: #ededed;
+    background: transparent;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+// @media screen and (width: 1920px) and (min-height: 1199px) {
+//     body {
+//         width: 1920px;
+//         // height: 1080px;
+//         #root {
+//             height: 1080px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 1440px) {
+//     body {
+//         width: 1440px;
+//         // height: 900px;
+//     }
+// }
+// @media screen and (max-width: 1280px) {
+//     body {
+//         width: 1280px;
+//         // height: 800px;
+//     }
+// }
+// // 小屏幕滚动处理
+// @media screen and (max-width: 1279px) {
+//     body {
+//         width: 1280px;
+//         height: 100vh;
+//         overflow-x: scroll;
+//     }
+// }
